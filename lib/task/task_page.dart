@@ -8,7 +8,7 @@ class _TaskPageState extends State<TaskPage> {
   @override
   Widget build(BuildContext context) {
     return Container(
-         child: new Text('task page'),
+         child: new Text(' 作业 task page'),
     );
   }
 }
