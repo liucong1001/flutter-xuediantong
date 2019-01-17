@@ -3,9 +3,12 @@ import '../common/base_style.dart';
 
 import '../msg/msg_page.dart';
 import '../task/task_page.dart';
+import '../home/home_index_page.dart';
 import '../contact/contact_page.dart';
 import '../center/center_page.dart';
 import 'navigation_icon_view .dart';
+// import '../constants.dart' show AppColors, AppStyles, Constants;
+
 
 class HomePage extends StatefulWidget {
   @override
@@ -25,55 +28,55 @@ class _HomePageState extends State<HomePage> {
       NavigationIconView(
         title: '消息',
         icon: IconData(
-          0xe608,
+          0xe69a,
           fontFamily: Constants.IconFontFamily,
         ),
         activeIcon: IconData(
-          0xe603,
+          0xe69a,
           fontFamily: Constants.IconFontFamily,
         ),
       ),
       NavigationIconView(
         title: '作业',
         icon: IconData(
-          0xe601,
+          0xe625,
           fontFamily: Constants.IconFontFamily,
         ),
         activeIcon: IconData(
-          0xe656,
+          0xe625,
           fontFamily: Constants.IconFontFamily,
         )
       ),
       NavigationIconView(
         title: '主页',
         icon: IconData(
-          0xe600,
+          0xec7f,
           fontFamily: Constants.IconFontFamily,
         ),
         activeIcon: IconData(
-          0xe671,
+          0xec7f,
           fontFamily: Constants.IconFontFamily,
         )
       ),
       NavigationIconView(
         title: '通讯录',
         icon: IconData(
-          0xe6c0,
+          0xe649,
           fontFamily: Constants.IconFontFamily,
         ),
         activeIcon: IconData(
-          0xe626,
+          0xe649,
           fontFamily: Constants.IconFontFamily,
         )
       ),
       NavigationIconView(
         title: '我的',
         icon: IconData(
-          0xe6c0,
+          0xe607,
           fontFamily: Constants.IconFontFamily,
         ),
         activeIcon: IconData(
-          0xe626,
+          0xe607,
           fontFamily: Constants.IconFontFamily,
         )
       ),
@@ -82,10 +85,9 @@ class _HomePageState extends State<HomePage> {
     _pages = [
       MsgPage(),
       TaskPage(),
-      // HomePage(),
+      HomeIndexPage(),
       ContactPage(),
       CenterPage(),
-      Container(color: Colors.brown),
     ];
   }
 
@@ -113,6 +115,9 @@ class _HomePageState extends State<HomePage> {
     );
 
     return Scaffold(
+      appBar: AppBar(
+        title:const Text('学点通'),
+      ),
       body:PageView.builder(
         itemBuilder: (BuildContext context, int index) {
           return _pages[index];
