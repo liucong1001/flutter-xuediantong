@@ -115,9 +115,6 @@ class _HomePageState extends State<HomePage> {
     );
 
     return Scaffold(
-      appBar: AppBar(
-        title:const Text('学点通'),
-      ),
       body:PageView.builder(
         itemBuilder: (BuildContext context, int index) {
           return _pages[index];

@@ -7,8 +7,11 @@ class ContactPage extends StatefulWidget {
 class _ContactPageState extends State<ContactPage> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: new Text('contact page'),
+    return Scaffold(
+      appBar:AppBar(
+        title: new Text('通讯录'),
+      ),
+      body:new Text('通讯录页面'), 
     );
   }
 }

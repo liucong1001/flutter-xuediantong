@@ -4,7 +4,7 @@ class AppColors {
   static const BackgroundColor = 0xffebebeb;
   static const AppBarColor = 0xff303030;
   static const TabIconNormal = 0xff999999;
-  static const TabIconActive = 0xff46c11b;
+  static const TabIconActive = 0xff2196F3;
   static const AppBarPopupMenuColor = 0xffffffff;
   static const TitleTextColor = 0xff353535;
   static const ConversationItemBg = 0xffffffff;
@@ -19,6 +19,7 @@ class AppColors {
   static const ContactGroupTitleBg = 0xffebebeb;
   static const ContactGroupTitleText = 0xff888888;
   static const IndexLetterBoxBg = Colors.black45;
+  static const  PageBgColor = 0xffF3F3F3;
 }
 
 class AppStyles {
