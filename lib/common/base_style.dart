@@ -20,6 +20,7 @@ class AppColors {
   static const ContactGroupTitleText = 0xff888888;
   static const IndexLetterBoxBg = Colors.black45;
   static const  PageBgColor = 0xffF3F3F3;
+  static const  ThemeDataColor = 0xff1482FF;
 }
 
 class AppStyles {

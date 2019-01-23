@@ -52,6 +52,7 @@ List listData =  List<Contact>();
     return Scaffold(
       appBar:AppBar(
         title: new Text('通讯录'),
+        centerTitle: true,
       ),
       body:new Container(
         color: Colors.white,
@@ -62,18 +63,6 @@ List listData =  List<Contact>();
               return contactItem(listData[index]);
            }
         ),
-        // child: ListView(
-        //      children: <Widget>[
-        //         ListTile(
-        //            leading: CircleAvatar(child: Text('班')),
-        //            title: Text('1年级8班'),
-        //         ),
-        //          ListTile(
-        //            leading: CircleAvatar(child: Text('班')),
-        //            title: Text('6年级1班'),
-        //         ),
-        //      ],
-        // ),
       ), 
     );
   }

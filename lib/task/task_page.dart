@@ -94,7 +94,7 @@ class _TaskPageState extends State<TaskPage> {
            mainAxisAlignment: MainAxisAlignment.center,
            children: <Widget>[
              new Container(height: 15.0,),
-             CircleAvatar(child: new Icon(icon,color: Colors.white),),
+             CircleAvatar(child: new Icon(icon,color: Colors.white),backgroundColor: Colors.blue,),
              new Container(
                  margin: const EdgeInsets.only(top: 8.0,bottom: 8.0),
                  child: new Text(
@@ -159,8 +159,8 @@ class _TaskPageState extends State<TaskPage> {
     return Scaffold(
       appBar: AppBar(
         title: new Text('作业'),
+         centerTitle: true,
       ),
-      
       backgroundColor: Color(AppColors.PageBgColor),
       body: new Column(
         children: <Widget>[

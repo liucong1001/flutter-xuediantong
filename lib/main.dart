@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import './home/home_page.dart';
+import './common/base_style.dart'  show AppColors;
+
 void main() => runApp(new MyApp());
 
 class MyApp extends StatelessWidget {
@@ -9,10 +11,7 @@ class MyApp extends StatelessWidget {
       title: '学点通',
       home: HomePage(),
       theme: new ThemeData(
-        // #1482ff
-          // brightness: Color(''),
-          // primaryColor: Colors.lightBlue[800],
-          //  accentColor: Colors.cyan[600],
+        primaryColorDark:Color(AppColors.ThemeDataColor),
       ),
     );
   }

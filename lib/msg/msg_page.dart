@@ -28,7 +28,7 @@ class _MsgItem extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 // height:100.0,
                 children: <Widget>[
-                    CircleAvatar(child: Text(item.avatar),),
+                    CircleAvatar(child: Text(item.avatar,style: TextStyle(color: Colors.white),),backgroundColor:Color(item.bgColor),),
                     Container(width: 10.0,),
                     Expanded(
                       child: Column(
@@ -84,9 +84,9 @@ class _MsgPageState extends State<MsgPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      //  child: new Text('msg page'),
       appBar:AppBar(
         title: Text('消息'),
+        centerTitle: true,
       ),
       body: new Container(
         child: new Column(

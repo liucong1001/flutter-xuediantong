@@ -61,7 +61,7 @@ class _CenterPageState extends State<CenterPage> {
   Widget build(BuildContext context) {
     return Container(
         padding: EdgeInsets.all(5.0),
-        margin: EdgeInsets.only(top:15.0),
+        margin: EdgeInsets.only(top:30.0),
         child: new Column(
            children: <Widget>[
               Padding(

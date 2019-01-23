@@ -38,6 +38,7 @@ List<Widget>imageList = List();
     return Container(
        color: Colors.white,
        padding: EdgeInsets.all(16.0),
+       margin: EdgeInsets.only(top:20.0),
        child: new Column(
          children: <Widget>[    
             _navBar(),
@@ -120,7 +121,7 @@ List<Widget>imageList = List();
                           child: Text('新年快乐 新年快乐!'),
                           padding: EdgeInsets.only(left: 5.0),
                           decoration: BoxDecoration(
-                            border: Border(right: BorderSide(color: Colors.grey,width: 2.0))
+                            // border: Border(right: BorderSide(color: Colors.grey,width: 2.0))
                           ),
                       ) ,
                 ),
