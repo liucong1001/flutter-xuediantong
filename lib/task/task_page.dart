@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../common/base_style.dart'  show AppColors, AppStyles, Constants;
+import '../common/base_style.dart'  show AppColors,  Constants;
 import '../modal/task_modal.dart';
 
 class TaskPage extends StatefulWidget {
@@ -89,7 +89,6 @@ class _TaskPageState extends State<TaskPage> {
   Widget build(BuildContext context) {
 
     Column buildNavAravtar(IconData icon ,String label){
-        Color color = Theme.of(context).primaryColor;
         return new Column(
            mainAxisSize: MainAxisSize.min,
            mainAxisAlignment: MainAxisAlignment.center,

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../common/base_style.dart'  show AppColors, AppStyles, Constants;
+import '../common/base_style.dart'  show AppColors, Constants;
 
 class CenterPage extends StatefulWidget {
   _CenterPageState createState() => _CenterPageState();

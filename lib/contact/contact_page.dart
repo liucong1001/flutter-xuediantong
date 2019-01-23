@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import '../modal//contact_modal.dart';
-import '../common/base_style.dart'  show AppColors, AppStyles, Constants;
+import '../common/base_style.dart'  show AppColors;
 
 
 class ContactPage extends StatefulWidget {

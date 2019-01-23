@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import '../modal//msg_modal.dart' show Msgitem , MsgListData ;
-import '../common/base_style.dart'  show AppColors, AppStyles, Constants;
+import '../common/base_style.dart'  show AppColors,  Constants;
 
 class _MsgItem extends StatelessWidget {
 

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_swiper/flutter_swiper.dart';
-import '../common/base_style.dart'  show AppColors, AppStyles, Constants;
 
 class HomeIndexPage extends StatefulWidget {
   @override
