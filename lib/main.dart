@@ -7,7 +7,13 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return new MaterialApp(
       title: '学点通',
-      home: HomePage()
+      home: HomePage(),
+      theme: new ThemeData(
+        // #1482ff
+          // brightness: Color(''),
+          // primaryColor: Colors.lightBlue[800],
+          //  accentColor: Colors.cyan[600],
+      ),
     );
   }
 }

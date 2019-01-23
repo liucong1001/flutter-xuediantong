@@ -105,126 +105,126 @@ List<Widget>imageList = List();
     );
 }
 
-Widget _swiperBuilder(context,index){
-   return (imageList[index]);
-}
+    Widget _swiperBuilder(context,index){
+      return (imageList[index]);
+    }
 
-Widget _msg(){
-   return  new Container(
-      //  padding:EdgeInsets.all(8.0),
-       margin: EdgeInsets.all(10.0),
-       child: new  Row(
-          children: <Widget>[
-            Icon(Icons.notifications,color: Colors.blue,),
-            Expanded(
-              child:  new Container(
-                      child: Text('新年快乐 新年快乐'),
-                      padding: EdgeInsets.only(left: 5.0),
-                      decoration: BoxDecoration(
-                        border: Border(right: BorderSide(color: Colors.grey,width: 2.0))
-                      ),
-                  ) ,
-            ),
-            Padding(
-              child:  Text('更多',style: TextStyle(color: Colors.grey),),
-              padding: EdgeInsets.only(left: 5.0),
-            )
-          ],
-     ) ,
-   );
-}
-
-Widget _menuList(){
-    return new Container(
-         child: new Column(
-           children: <Widget>[
-              new Row(
-                  children: <Widget>[
-                    Expanded(
-                      child: meunItem('./assets/imgs/menu1.png','发作业'),
-                    ),
-                    Expanded(
-                      child: meunItem('./assets/imgs/menu2.png','课程表'),
-                    ),
-                    Expanded(
-                      child: meunItem('./assets/imgs/menu2.png','小游戏'),
-                    ),
-                    Expanded(
-                      child: meunItem('./assets/imgs/menu3.png','发公告'),
-                    ),
-
-                  ],
-                ),
-                // new Row(
-                //      children: <Widget>[
-                //         Container(
-                //           child: meunItem('./assets/imgs/menu4.png','更多'),
-                //         ),
-                //      ],
-                // )
-           ],
-         ),
-    );
-  
-}
-
-meunItem(image,title){
-   return new Container(
-     child: new Column(
-       children: <Widget>[
-          Container(
-            padding: EdgeInsets.only(top:10.0,bottom: 10.0),
-            child: Image.asset(image,width: 50.0,height: 50.0,),
-          ),
-          Text(title)
-       ],
-     ),
-   );
-}
-
-Widget  _newsList(){
-    return new Container(
-            // height: 400.0,
-            child: Column(
+    Widget _msg(){
+      return  new Container(
+          //  padding:EdgeInsets.all(8.0),
+          margin: EdgeInsets.all(10.0),
+          child: new  Row(
               children: <Widget>[
-                newItem('致家长','牵着蜗牛去散步','扎心美文，分享给焦虑的父母：孩子，是慢慢养大的'),
-                newItem('致老师','老师你好,我是小豚家长','老师与家长沟通的效果如何，直接关系着家校合作是否成功。'),
+                Icon(IconData(0xe04e,fontFamily:'MaterialIcons')),
+                Expanded(
+                  child:  new Container(
+                          child: Text('新年快乐 新年快乐!'),
+                          padding: EdgeInsets.only(left: 5.0),
+                          decoration: BoxDecoration(
+                            border: Border(right: BorderSide(color: Colors.grey,width: 2.0))
+                          ),
+                      ) ,
+                ),
+                Padding(
+                  child:  Text('更多',style: TextStyle(color: Colors.grey),),
+                  padding: EdgeInsets.only(left: 5.0),
+                )
+              ],
+        ) ,
+      );
+    }
+
+    Widget _menuList(){
+        return new Container(
+            child: new Column(
+              children: <Widget>[
+                  new Row(
+                      children: <Widget>[
+                        Expanded(
+                          child: meunItem('./assets/imgs/menu1.png','发作业'),
+                        ),
+                        Expanded(
+                          child: meunItem('./assets/imgs/menu2.png','课程表'),
+                        ),
+                        Expanded(
+                          child: meunItem('./assets/imgs/menu2.png','小游戏'),
+                        ),
+                        Expanded(
+                          child: meunItem('./assets/imgs/menu3.png','发公告'),
+                        ),
+
+                      ],
+                    ),
+                    // new Row(
+                    //      children: <Widget>[
+                    //         Container(
+                    //           child: meunItem('./assets/imgs/menu4.png','更多'),
+                    //         ),
+                    //      ],
+                    // )
               ],
             ),
-    );
-}
-newItem(nav,title,content){
-  return new Container(
-    // color: Colors.red,
-    padding: EdgeInsets.all(10.0),
-    child: new Row(
-        children: <Widget>[
-             Expanded(
-                flex: 6,
-               child: Column(
-                //  mainAxisAlignment: MainAxisAlignment.center,
-                crossAxisAlignment: CrossAxisAlignment.start,
-                 children: <Widget>[
-                    new Container(
-                         padding: EdgeInsets.only(top:10.0,bottom: 10.0),
-                         child:Text('【$nav】 $title',style: TextStyle(fontSize: 16.0), ) ,
-                    ),
-                    Text(content,style: TextStyle(color: Colors.grey),)
-                 ],
-               ),
-             ),
-             Expanded(
-                flex: 4,
-               child: Image.network('http://118.126.109.236:40001/langyi/userfiles/fileupload/201812/1078606593136005120.jpg',
-                   height: 80.0,
-                   width: 100.0,
-                   fit: BoxFit.fill,
+        );
+      
+    }
+
+    meunItem(image,title){
+      return new Container(
+        child: new Column(
+          children: <Widget>[
+              Container(
+                padding: EdgeInsets.only(top:10.0,bottom: 10.0),
+                child: Image.asset(image,width: 50.0,height: 50.0,),
+              ),
+              Text(title)
+          ],
+        ),
+      );
+    }
+
+    Widget  _newsList(){
+        return new Container(
+                // height: 400.0,
+                child: Column(
+                  children: <Widget>[
+                    newItem('致家长','牵着蜗牛去散步','扎心美文，分享给焦虑的父母：孩子，是慢慢养大的'),
+                    newItem('致老师','老师你好,我是小豚家长','老师与家长沟通的效果如何，直接关系着家校合作是否成功。'),
+                  ],
+                ),
+        );
+    }
+    newItem(nav,title,content){
+      return new Container(
+        // color: Colors.red,
+        padding: EdgeInsets.all(10.0),
+        child: new Row(
+            children: <Widget>[
+                Expanded(
+                    flex: 6,
+                  child: Column(
+                    //  mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: <Widget>[
+                        new Container(
+                            padding: EdgeInsets.only(top:10.0,bottom: 10.0),
+                            child:Text('【$nav】 $title',style: TextStyle(fontSize: 16.0), ) ,
+                        ),
+                        Text(content,style: TextStyle(color: Colors.grey),)
+                    ],
                   ),
-             )
-        ],
-    ),
-  );
-}
+                ),
+                Expanded(
+                    flex: 4,
+                  child: Image.network('http://118.126.109.236:40001/langyi/userfiles/fileupload/201812/1078606593136005120.jpg',
+                      height: 80.0,
+                      width: 100.0,
+                      fit: BoxFit.fill,
+                      ),
+                )
+            ],
+        ),
+      );
+    }
 
 
 

@@ -119,8 +119,8 @@ class _TaskPageState extends State<TaskPage> {
           child:  new Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: <Widget>[
-                  buildNavAravtar(Icons.call, '排行榜'),
-                  buildNavAravtar(Icons.near_me, '推荐文章'),
+                  buildNavAravtar(IconData(0xe66e, fontFamily: Constants.IconFontFamily), '排行榜'),
+                  buildNavAravtar(IconData(0xe63b, fontFamily: Constants.IconFontFamily), '推荐文章'),
                   buildNavAravtar(Icons.share, '推荐学习'),
               ],
             ),
@@ -155,20 +155,6 @@ class _TaskPageState extends State<TaskPage> {
           ),
       );
   }
-
-
-
-
-    Widget list(){
-      return new ListView.builder(
-              padding: EdgeInsets.all(8.0),
-              itemCount:4,
-              itemBuilder:(BuildContext context, int index){
-                  return ListItemWidget(item:listData[index]);
-              }
-      );
-    }
-
 
 
     return Scaffold(
